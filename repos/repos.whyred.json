@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "whyred-n-oss",
-      "repo": "https://github.com/Renzprjkt/kernel_n_whyred",
-      "branch": "whyred-n-oss",
-      "device": "whyred",
-      "defconfig": "whyred-perf_defconfig"
+      "name": "dipper-t-oss",
+      "repo": "https://github.com/shenprjkt/android_kernel_xiaomi_sdm845",
+      "branch": "13",
+      "device": "dipper",
+      "defconfig": "sdm845-perf_defconfig"
   },
     "toolchains": [
       {
