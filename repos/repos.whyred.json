@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "dipper-t-oss",
-      "repo": "https://github.com/shenprjkt/android_kernel_xiaomi_sdm845",
-      "branch": "13",
-      "device": "dipper",
-      "defconfig": "sdm845-perf_defconfig"
+      "name": "spes-r-oss",
+      "repo": "https://github.com/Renzprjkt/android_kernel_xiaomi_sm6225",
+      "branch": "spes-r-oss",
+      "device": "spes",
+      "defconfig": "vendor/spes-perf_defconfig"
   },
     "toolchains": [
       {
