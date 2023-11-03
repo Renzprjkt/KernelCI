@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "dipper-t-oss",
-      "repo": "https://github.com/shenprjkt/LawRun_xiaomi_sdm845_CAF",
-      "branch": "master",
+      "repo": "https://github.com/shenprjkt/NGK_android_kernel_xiaomi_sdm845",
+      "branch": "q-caf-new",
       "device": "dipper",
-      "defconfig": "LawRun_defconfig"
+      "defconfig": "nografity-dipper_defconfig"
   },
     "toolchains": [
       {
