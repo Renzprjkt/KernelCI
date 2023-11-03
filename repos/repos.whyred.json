@@ -5,7 +5,7 @@
       "repo": "https://github.com/shenprjkt/LawRun_xiaomi_sdm845_CAF",
       "branch": "master",
       "device": "dipper",
-      "defconfig": "dipper_defconfig"
+      "defconfig": "LawRun_defconfig"
   },
     "toolchains": [
       {
