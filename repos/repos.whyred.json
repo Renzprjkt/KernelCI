@@ -5,7 +5,7 @@
       "repo": "https://github.com/shenprjkt/NGK_android_kernel_xiaomi_sdm845",
       "branch": "q-caf-new",
       "device": "dipper",
-      "defconfig": "nografity-dipper_defconfig"
+      "defconfig": "nogravity-dipper_defconfig"
   },
     "toolchains": [
       {
