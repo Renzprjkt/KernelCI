@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "dipper-t-oss",
-      "repo": "https://github.com/shenprjkt/android_kernel_xiaomi_sdm845",
-      "branch": "12",
+      "repo": "https://github.com/shenprjkt/LawRun_xiaomi_sdm845_CAF",
+      "branch": "master",
       "device": "dipper",
       "defconfig": "dipper_defconfig"
   },
