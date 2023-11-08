@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "dipper-t-oss",
-      "repo": "https://github.com/shenprjkt/NGK_android_kernel_xiaomi_sdm845",
-      "branch": "q-caf-new",
-      "device": "dipper",
-      "defconfig": "nogravity-dipper_defconfig"
+      "repo": "https://github.com/Renzprjkt/kernel_xiaomi_rosy",
+      "branch": "14-retrofit/ksu",
+      "device": "rosy",
+      "defconfig": "rosy-perf_defconfig"
   },
     "toolchains": [
       {
