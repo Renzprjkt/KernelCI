@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "dipper-t-oss",
+      "name": "RawakAmeru",
       "repo": "https://github.com/Renzprjkt/kernel_xiaomi_rosy",
       "branch": "14-retrofit/ksu",
       "device": "rosy",
