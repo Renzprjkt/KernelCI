@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "RawakAmeru",
-      "repo": "https://github.com/Renzprjkt/kernel_xiaomi_rosy",
-      "branch": "14-retrofit/ksu",
-      "device": "rosy",
-      "defconfig": "rosy-perf_defconfig"
+      "repo": "https://github.com/Renzprjkt/android_kernel_xiaomi_sm6225",
+      "branch": "spes-r-oss",
+      "device": "spes",
+      "defconfig": "vendor/spes-perf_defconfig"
   },
     "withKernelSU": true,
     "toolchains": [
