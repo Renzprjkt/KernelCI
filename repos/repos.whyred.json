@@ -1,13 +1,13 @@
 [
   {
     "kernelSource": {
-      "name": "RawakAmeru",
-      "repo": "https://github.com/Renzprjkt/android_kernel_xiaomi_sm6225",
-      "branch": "spes-r-oss",
+      "name": "Tenshin",
+      "repo": "https://github.com/Renzprjkt/kernel_xiaomi_spes_sm6225",
+      "branch": "main",
       "device": "spes",
       "defconfig": "vendor/spes-perf_defconfig"
   },
-    "withKernelSU": true,
+    "withKernelSU": false,
     "toolchains": [
       {
         "repo": "https://github.com/kdrag0n/proton-clang",
