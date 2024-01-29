@@ -5,7 +5,7 @@
       "repo": "https://github.com/Renzprjkt/kernel_xiaomi_spes_sm6225",
       "branch": "main",
       "device": "spes",
-      "defconfig": "vendor/spes-perf_defconfig"
+      "defconfig": "vendor/tenshin-perf_defconfig"
   },
     "withKernelSU": false,
     "toolchains": [
