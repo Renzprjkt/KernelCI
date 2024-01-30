@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "Tenshin",
       "repo": "https://github.com/Renzprjkt/kernel_xiaomi_spes_sm6225",
-      "branch": "main",
+      "branch": "Tenshin-lmk",
       "device": "spes",
       "defconfig": "vendor/tenshin-perf_defconfig"
   },
