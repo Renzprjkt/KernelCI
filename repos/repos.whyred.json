@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "Tenshin",
-      "repo": "https://github.com/Renzprjkt/D8G_Kernel",
+      "repo": "https://github.com/shenprjkt/D8G_Kernel_old",
       "branch": "main",
       "device": "dipper",
       "defconfig": "d8g_defconfig"
