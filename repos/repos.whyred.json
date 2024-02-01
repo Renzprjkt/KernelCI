@@ -3,11 +3,11 @@
     "kernelSource": {
       "name": "Tenshin",
       "repo": "https://github.com/shenprjkt/D8G_Kernel_sdm845",
-      "branch": "main",
-      "device": "dipper",
-      "defconfig": "dipper_defconfig"
+      "branch": "Tenshin-Nightmare-ksu",
+      "device": "spes",
+      "defconfig": "tenshin-perf_defconfig"
   },
-    "withKernelSU": false,
+    "withKernelSU": true,
     "toolchains": [
       {
         "repo": "https://github.com/kdrag0n/proton-clang",
