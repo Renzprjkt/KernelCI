@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "Tenshin",
-      "repo": "https://github.com/shenprjkt/D8G_Kernel_old",
+      "repo": "https://github.com/shenprjkt/D8G_Kernel_sdm845",
       "branch": "main",
       "device": "dipper",
-      "defconfig": "d8g_defconfig"
+      "defconfig": "dipper_defconfig"
   },
     "withKernelSU": false,
     "toolchains": [
