@@ -5,7 +5,7 @@
       "repo": "https://github.com/Renzprjkt/D8G_Kernel",
       "branch": "main",
       "device": "dipper",
-      "defconfig": "dipper_defconfig"
+      "defconfig": "d8g_defconfig"
   },
     "withKernelSU": false,
     "toolchains": [
