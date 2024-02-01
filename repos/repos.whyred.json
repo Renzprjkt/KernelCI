@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "Tenshin",
-      "repo": "https://github.com/Renzprjkt/kernel_xiaomi_spes_sm6225",
+      "repo": "https://github.com/Renzprjkt/D8G_Kernel",
       "branch": "main",
-      "device": "spes",
-      "defconfig": "vendor/tenshin-perf_defconfig"
+      "device": "dipper",
+      "defconfig": "d8g_defconfig"
   },
     "withKernelSU": false,
     "toolchains": [
