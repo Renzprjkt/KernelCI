@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "Tenshin",
-      "repo": "https://github.com/Renzprjkt/kernel_xiaomi_spes_sm6225",
-      "branch": "Tenshin-Nightmare-ksu",
+      "repo": "https://github.com/shenprjkt/kernel_xiaomi_spes_sm6225",
+      "branch": "Tenshin-Nightmare",
       "device": "spes",
       "defconfig": "vendor/tenshin-perf_defconfig"
   },
