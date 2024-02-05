@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "Tenshin",
-      "repo": "https://github.com/shenprjkt/kernel_xiaomi_spes_sm6225",
+      "name": "Never死んだ",
+      "repo": "https://github.com/shenprjkt/NGK_android_kernel_xiaomi_sdm845",
       "branch": "Tenshin-Nightmare",
-      "device": "spes",
-      "defconfig": "vendor/tenshin-perf_defconfig"
+      "device": "dipper",
+      "defconfig": "nogravity-dipper_defconfig"
   },
     "withKernelSU": true,
     "toolchains": [
