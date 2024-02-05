@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "Never死んだ",
       "repo": "https://github.com/shenprjkt/NGK_android_kernel_xiaomi_sdm845",
-      "branch": "Tenshin-Nightmare",
+      "branch": "pie",
       "device": "dipper",
       "defconfig": "nogravity-dipper_defconfig"
   },
