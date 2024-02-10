@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "Never死んだ",
-      "repo": "https://github.com/Renzprjkt/kernel_xiaomi_spes_sm6225",
-      "branch": "Tenshin-Nightmare",
+      "repo": "https://github.com/Renzprjkt/kernel_xiaomi_spes",
+      "branch": "erofs-feature",
       "device": "spesn",
       "defconfig": "vendor/tenshin-perf_defconfig"
   },
