@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "Never死んだ",
       "repo": "https://github.com/Renzprjkt/kernel_xiaomi_spes",
-      "branch": "erofs-feature",
+      "branch": "Tenshin-Nightmare",
       "device": "spesn",
       "defconfig": "vendor/tenshin-perf_defconfig"
   },
