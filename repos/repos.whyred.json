@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "Never死んだ",
-      "repo": "https://github.com/Renzprjkt/kernel_xiaomi_spes",
-      "branch": "Tenshin-Nightmare",
-      "device": "spesn",
-      "defconfig": "vendor/tenshin-perf_defconfig"
+      "repo": "https://github.com/shenprjkt/android_kernel_xiaomi_msm8953",
+      "branch": "13",
+      "device": "ysl",
+      "defconfig": "ysl_defconfig"
   },
     "withKernelSU": false,
     "toolchains": [
