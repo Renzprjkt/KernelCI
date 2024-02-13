@@ -17,16 +17,6 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@v3
 
-      - name: Set Git Config
-        run: |
-          git config --global user.name "shenprjkt"
-          git config --global user.email "shenprjktplayground@gmail.com"
-
-      - name: Set KBUILD
-        run: |
-          export KBUILD_BUILD_USER=RenzSG
-          export KBUILD_BUILD_HOST=Ameru
-
       - name: "Generate Matrix"
         id: generate-matrix
         run: |
@@ -63,6 +53,16 @@ jobs:
       useAnykernel: ${{ matrix.repos.AnyKernel3.use }}
       release: ${{ matrix.repos.AnyKernel3.release }}
     steps:
+      - name: Set Git Config
+        run: |
+          git config --global user.name "shenprjkt"
+          git config --global user.email "shenprjktplayground@gmail.com"
+
+      - name: Set KBUILD
+        run: |
+          export KBUILD_BUILD_USER=Mahiru30
+          export KBUILD_BUILD_HOST=kubuntu
+          
       - name: "Setup Environment"
         run: |
           sudo apt-get update
