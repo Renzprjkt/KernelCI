@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "Never死んだ",
-      "repo": "https://github.com/Renzprjkt/4.19-ysl-test",
-      "branch": "backup2",
+      "repo": "https://github.com/Renzprjkt/msm-4.19",
+      "branch": "caf_base",
       "device": "ysl",
       "defconfig": "vendor/msm8953-perf_defconfig"
   },
