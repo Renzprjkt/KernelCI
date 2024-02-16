@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "Never死んだ",
-      "repo": "https://github.com/Renzprjkt/msm-4.19",
-      "branch": "caf_base",
-      "device": "ysl",
-      "defconfig": "vendor/msm8953-perf_defconfig"
+      "repo": "https://github.com/hilmandesu/Sphinx-Dipper",
+      "branch": "Sphinx-11",
+      "device": "dipper",
+      "defconfig": "sphinx_defconfig"
   },
     "withKernelSU": false,
     "toolchains": [
