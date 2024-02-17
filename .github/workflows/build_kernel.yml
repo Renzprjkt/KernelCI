@@ -11,7 +11,7 @@ on:
 
 jobs:
   Set-repos:
-    name: "Parse repos.json"
+    name: "Configuration CI"
     runs-on: ubuntu-latest
     outputs:
       repos: ${{ steps.generate-matrix.outputs.repos }}
@@ -20,7 +20,7 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@v3
 
-      - name: "Generate Matrix"
+      - name: "Generate CI"
         id: generate-matrix
         run: |
           echo "repos<<EOF" >> $GITHUB_OUTPUT
@@ -57,14 +57,14 @@ jobs:
       useAnykernel: ${{ matrix.repos.AnyKernel3.use }}
       release: ${{ matrix.repos.AnyKernel3.release }}
     steps:
-      - name: "Install prerequisites"
+      - name: "Install Dependency"
         run: |
           sudo apt-get update
           sudo apt-get install -y build-essential clang bc bison libssl-dev libfl-dev libncurses5-dev libzstd-dev libtinfo5
           sudo apt-get install -y curl git ftp lftp wget libarchive-tools ccache python2 python2-dev
           sudo apt-get install -y zip unzip tar gzip bzip2 rar unrar cpio
 
-      - name: "Create cache key from `repos`"
+      - name: "Create cache"
         if: ${{ env.ccache == 'true' }}
         id: ccache_key
         run: |
