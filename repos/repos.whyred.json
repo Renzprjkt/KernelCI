@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "Never死んだ",
-      "repo": "https://github.com/hilmandesu/Sphinx-Dipper",
-      "branch": "Sphinx-11",
-      "device": "dipper",
-      "defconfig": "sphinx_defconfig"
+      "repo": "https://github.com/mayuri-hikari/android_kernel_xiaomi_oxygen",
+      "branch": "lineage-21",
+      "device": "ysl",
+      "defconfig": "vendor/msm8953-perf_defconfig"
   },
     "withKernelSU": false,
     "toolchains": [
