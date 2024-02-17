@@ -18,7 +18,7 @@ jobs:
       builddate: ${{ steps.generate-builddate.outputs.builddate }}
     steps:
       - name: "Checkout"
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: "Generate CI"
         id: generate-matrix
@@ -73,7 +73,7 @@ jobs:
 
       - name: "Cache ccache files"
         if: ${{ env.ccache == 'true' }}
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: |
             ~/.ccache
@@ -236,7 +236,7 @@ jobs:
           make ${{ env.args }}
 
       - name: "Upload Image.gz"
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         env:
           arch: ${{ steps.generate-args.outputs.ARCH }}
         with:
@@ -246,7 +246,7 @@ jobs:
           retention-days: 7
 
       - name: "Upload Image.gz-dtb"
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         env:
           arch: ${{ steps.generate-args.outputs.ARCH }}
         with:
@@ -256,7 +256,7 @@ jobs:
           retention-days: 7
 
       - name: "Upload dtb"
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         env:
           arch: ${{ steps.generate-args.outputs.ARCH }}
         with:
@@ -266,7 +266,7 @@ jobs:
           retention-days: 7
 
       - name: "Upload dtbo.img"
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         env:
           arch: ${{ steps.generate-args.outputs.ARCH }}
         with:
