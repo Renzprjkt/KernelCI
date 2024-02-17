@@ -1,14 +1,17 @@
 name: "Build kernels"
 
 env:
-  OUT_DIR: "${{ github.workspace }}/out"
+  CONFIGURATION: "repos.json"
+  OUT_DIR: "out"
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '14 13 * * 5'
 
 jobs:
   Set-repos:
-    name: "Checkout"
+    name: "Parse repos.json"
     runs-on: ubuntu-latest
     outputs:
       repos: ${{ steps.generate-matrix.outputs.repos }}
@@ -21,7 +24,7 @@ jobs:
         id: generate-matrix
         run: |
           echo "repos<<EOF" >> $GITHUB_OUTPUT
-          jq -s '[.[][]]' repos/repos*.json >> $GITHUB_OUTPUT
+          cat  ${{ env.CONFIGURATION }} >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
       - name: "Set builddate"
         id: generate-builddate
@@ -50,25 +53,34 @@ jobs:
       DEFCONFIG_NAME: ${{ matrix.repos.kernelSource.defconfig }}
 
       withKernelSU: ${{ matrix.repos.withKernelSU }}
+      ccache: ${{ matrix.repos.ccache }}
       useAnykernel: ${{ matrix.repos.AnyKernel3.use }}
       release: ${{ matrix.repos.AnyKernel3.release }}
     steps:
-      - name: Set Git Config
-        run: |
-          git config --global user.name "shenprjkt"
-          git config --global user.email "shenprjktplayground@gmail.com"
-
-      - name: Set KBUILD
-        run: |
-          export KBUILD_BUILD_USER=Mahiru30
-          export KBUILD_BUILD_HOST=kubuntu
-          
-      - name: "Setup Environment"
+      - name: "Install prerequisites"
         run: |
           sudo apt-get update
-          sudo apt-get install -y build-essential bc gcc-aarch64-linux-gnu gcc-arm-linux-gnueabihf gcc-arm-linux-gnueabi lld libssl-dev libfl-dev
+          sudo apt-get install -y build-essential clang bc bison libssl-dev libfl-dev libncurses5-dev libzstd-dev libtinfo5
           sudo apt-get install -y curl git ftp lftp wget libarchive-tools ccache python2 python2-dev
-          sudo apt-get install -y zip unzip tar gzip bzip2 rar unrar
+          sudo apt-get install -y zip unzip tar gzip bzip2 rar unrar cpio
+
+      - name: "Create cache key from `repos`"
+        if: ${{ env.ccache == 'true' }}
+        id: ccache_key
+        run: |
+          ccache -o compression=false -o cache_dir=$HOME/.ccache
+          echo "CACHE_KEY=$(echo -n '${{ toJSON(matrix.repos) }}' | base64 -w 0 | cut -c -48)" >> $GITHUB_OUTPUT
+
+      - name: "Cache ccache files"
+        if: ${{ env.ccache == 'true' }}
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.ccache
+            ${{ env.OUT_DIR }}
+          key: ccache-${{ env.KERNEL_NAME }}-${{ steps.ccache_key.outputs.CACHE_KEY }}-${{ env.builddate }}
+          restore-keys: |
+            ccache-${{ env.KERNEL_NAME }}-${{ steps.ccache_key.outputs.CACHE_KEY }}-${{ env.builddate }}
         
 
       - name: Set swap to 10G
@@ -195,6 +207,16 @@ jobs:
           fi
 
           curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
+
+      - name: Set Git Config
+        run: |
+          git config --global user.name "shenprjkt"
+          git config --global user.email "shenprjktplayground@gmail.com"
+
+      - name: Set KBUILD
+        run: |
+          export KBUILD_BUILD_USER=Mahiru30
+          export KBUILD_BUILD_HOST=kubuntu
 
       - name: "Make defconfig"
         working-directory: ${{ env.KERNEL_NAME }}
