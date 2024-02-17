@@ -1,0 +1,35 @@
+[
+  {
+    "kernelSource": {
+      "name": "Never死んだ",
+      "repo": "https://github.com/mayuri-hikari/NGK_android_kernel_xiaomi_sdm845",
+      "branch": "t-caf-latest",
+      "device": "dipper",
+      "defconfig": "nogravity_defconfig"
+  },
+    "withKernelSU": false,
+    "toolchains": [
+      {
+        "repo": "https://gitlab.com/AnggaR96s/clang-gengkapak",
+        "branch": "main",
+        "name": "clang-gengkapak",
+        "binPath": ["bin"]
+      }
+    ],
+    "ccache": true,
+    "params": {
+      "ARCH": "arm64",
+      "CC": "clang-gengkapak/bin/clang",
+      "externalCommand": {
+        "CROSS_COMPILE": "clang-gengkapak/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "clang-gengkapak/bin/arm-linux-gnueabi-",
+      }
+    },
+    "AnyKernel3": {
+      "use": true,
+      "release": true,
+      "repo": "https://github.com/shenprjkt/AnyKernel3",
+      "branch": "master"
+    }
+  }
+]
