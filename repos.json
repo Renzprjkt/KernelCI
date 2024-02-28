@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "Never死んだ",
-      "repo": "https://github.com/mayuri-hikari/android_kernel_xiaomi_oxygen",
-      "branch": "lineage-21",
+      "repo": "https://github.com/Renzprjkt30/android_kernel_msm8953/commits/ysl-qpnp/",
+      "branch": "ysl-qpnp",
       "device": "ysl",
       "defconfig": "vendor/msm8953-perf_defconfig"
   },
