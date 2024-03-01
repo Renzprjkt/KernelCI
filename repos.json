@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "Never死んだ",
       "repo": "https://github.com/Renzprjkt30/android_kernel_msm8953",
-      "branch": "ysl-qpnp",
+      "branch": "ysl-qpnp-v2",
       "device": "ysl",
       "defconfig": "vendor/msm8953-perf_defconfig"
   },
