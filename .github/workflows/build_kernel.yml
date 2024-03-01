@@ -5,9 +5,10 @@ env:
   OUT_DIR: "${{ github.workspace }}/out"
 
 on:
+  watch:
+    types: [started]
+
   workflow_dispatch:
-  schedule:
-    - cron: '14 13 * * 5'
 
 jobs:
   Set-repos:
