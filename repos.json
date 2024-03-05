@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "Shiinaeru",
-      "repo": "https://github.com/Renzprjkt30/android_kernel_xiaomi_rosy",
-      "branch": "lineage-21.0",
+      "repo": "https://github.com/Renzprjkt30/kernel_xiaomi_rosy",
+      "branch": "eleven",
       "device": "rosy",
       "defconfig": "rosy-perf_defconfig"
   },
