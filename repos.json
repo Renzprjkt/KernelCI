@@ -1,13 +1,13 @@
 [
   {
     "kernelSource": {
-      "name": "Never死んだ",
-      "repo": "https://github.com/Renzprjkt30/android_kernel_msm8953",
-      "branch": "ysl-qpnp-v2",
-      "device": "ysl",
-      "defconfig": "vendor/msm8953-perf_defconfig"
+      "name": "Shiinaeru",
+      "repo": "https://github.com/Renzprjkt30/android_kernel_xiaomi_rosy",
+      "branch": "lineage-21.0",
+      "device": "rosy",
+      "defconfig": "rosy-perf_defconfig"
   },
-    "withKernelSU": false,
+    "withKernelSU": true,
     "toolchains": [
       {
         "repo": "https://github.com/kdrag0n/proton-clang",
