@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "Shiinaeru",
-      "repo": "https://github.com/Renzprjkt30/kernel_xiaomi_rosy",
-      "branch": "eleven",
-      "device": "rosy",
-      "defconfig": "rosy-perf_defconfig"
+      "name": "mashiro",
+      "repo": "https://github.com/nekoprjkt/kernel-xiaomi-vince",
+      "branch": "14",
+      "device": "vince",
+      "defconfig": "vince-perf_defconfig"
   },
     "withKernelSU": true,
     "toolchains": [
