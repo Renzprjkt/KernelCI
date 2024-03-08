@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "mashiro",
-      "repo": "https://github.com/nekoprjkt/kernel-xiaomi-vince",
-      "branch": "14",
+      "repo": "https://github.com/Renzprjkt/kernel_xiaomi_vince_4.19",
+      "branch": "vince-next",
       "device": "vince",
-      "defconfig": "vince-perf_defconfig"
+      "defconfig": "vendor/msm8953-perf_defconfig"
   },
     "withKernelSU": false,
     "toolchains": [
