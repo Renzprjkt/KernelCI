@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "mashiro",
       "repo": "https://github.com/Renzprjkt/kernel_xiaomi_vince_4.19",
-      "branch": "vince-next",
+      "branch": "power-qpnp-leds",
       "device": "vince",
       "defconfig": "vendor/msm8953-perf_defconfig"
   },
