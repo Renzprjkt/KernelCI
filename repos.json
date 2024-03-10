@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "mashiro",
-      "repo": "https://github.com/Renzprjkt/kernel_xiaomi_vince_4.19",
-      "branch": "power-qpnp-leds",
-      "device": "vince",
-      "defconfig": "vendor/msm8953-perf_defconfig"
+      "repo": "https://github.com/Renzprjkt/android_kernel_xiaomi_ysl",
+      "branch": "13",
+      "device": "ysl",
+      "defconfig": "ysl_defconfig"
   },
     "withKernelSU": false,
     "toolchains": [
