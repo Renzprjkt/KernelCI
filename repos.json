@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "mashiro",
-      "repo": "https://github.com/Renzprjkt/android_kernel_xiaomi_ysl",
-      "branch": "13",
-      "device": "ysl",
-      "defconfig": "ysl_defconfig"
+      "repo": "https://github.com/nekoprjkt/kernel-xiaomi-vince",
+      "branch": "erofs-tes",
+      "device": "vince",
+      "defconfig": "vince-perf_defconfig"
   },
     "withKernelSU": false,
     "toolchains": [
