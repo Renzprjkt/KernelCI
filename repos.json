@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "mashiro",
-      "repo": "https://github.com/nekoprjkt/kernel-xiaomi-vince",
+      "repo": "https://github.com/shenprjkt/kernel-xiaomi-vince",
       "branch": "erofs-tes",
       "device": "vince",
       "defconfig": "vince-perf_defconfig"
