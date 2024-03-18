@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "Bloss-Shine",
-      "repo": "https://github.com/Renzprjkt/kernel-xiaomi-vince",
-      "branch": "erofs",
-      "device": "vince",
-      "defconfig": "vince-perf_defconfig"
+      "repo": "https://github.com/mayuri-hikari/Xiaomi_Kernel_OpenSource",
+      "branch": "ysl-o-oss",
+      "device": "ysl",
+      "defconfig": "ysl-perf_defconfig"
   },
     "withKernelSU": false,
     "toolchains": [
@@ -18,7 +18,7 @@
     ],
     "ccache": true,
     "params": {
-     "ARCH": "arm64",
+     "ARCH": "arm",
       "CC": "proton-clang/bin/clang",
       "externalCommand": {
         "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
