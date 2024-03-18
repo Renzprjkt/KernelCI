@@ -1,0 +1,33 @@
+[
+  {
+    "kernelSource": {
+      "name": "Bloss-Shine",
+      "repo": "https://github.com/mayuri-hikari/Xiaomi_Kernel_OpenSource",
+      "branch": "ysl-o-oss",
+      "device": "ysl",
+      "defconfig": "ysl-perf_defconfig"
+  },
+    "withKernelSU": false,
+    "toolchains": [
+      {
+        "repo": "https://github.com/KudProject/arm-linux-androideabi-4.9",
+        "branch": "master",
+        "name": "proton-clang",
+        "binPath": ["bin"]
+      }
+    ],
+    "ccache": true,
+    "params": {
+     "ARCH": "arm",
+      "externalCommand": {
+        "CROSS_COMPILE": "proton-clang/bin/arm-linux-androideabi-",
+      }
+    },
+    "AnyKernel3": {
+      "use": true,
+      "release": true,
+      "repo": "https://github.com/Renzprjkt30/Anykernel3",
+      "branch": "main"
+    }
+  }
+]
