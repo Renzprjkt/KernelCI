@@ -10,7 +10,7 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://github.com/kdrag0n/proton-clang",
+        "repo": "https://github.com/androbada525/gcc-linaro-6.5.0",
         "branch": "master",
         "name": "proton-clang",
         "binPath": ["bin"]
@@ -18,20 +18,9 @@
     ],
     "ccache": true,
     "params": {
-     "ARCH": "arm",
-      "CC": "proton-clang/bin/clang",
+     "ARCH": "arm64",
       "externalCommand": {
         "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
-        "AR": "proton-clang/bin/llvm-ar",
-        "NM": "proton-clang/bin/llvm-nm",
-        "OBJCOPY": "proton-clang/bin/llvm-objcopy",
-        "OBJDUMP": "proton-clang/bin/llvm-objdump",
-        "READELF": "proton-clang/bin/llvm-readelf",
-        "OBJSIZE": "proton-clang/bin/llvm-size",
-        "STRIP": "proton-clang/bin/llvm-strip",
-        "LLVM_AR": "proton-clang/bin/llvm-ar",
-        "LLVM_DIS": "proton-clang/bin/llvm-dis"
       }
     },
     "AnyKernel3": {
