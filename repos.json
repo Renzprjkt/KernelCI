@@ -10,7 +10,7 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://github.com/androbada525/gcc-linaro-6.5.0",
+        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8",
         "branch": "master",
         "name": "proton-clang",
         "binPath": ["bin"]
@@ -18,9 +18,9 @@
     ],
     "ccache": true,
     "params": {
-     "ARCH": "arm64",
+     "ARCH": "arm",
       "externalCommand": {
-        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE": "proton-clang/bin/arm-eabi-",
       }
     },
     "AnyKernel3": {
