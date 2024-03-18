@@ -1,9 +1,9 @@
 [
   {
     "kernelSource": {
-      "name": "mashiro",
-      "repo": "https://github.com/shenprjkt/kernel-xiaomi-vince",
-      "branch": "erofs-tes",
+      "name": "Bloss-Shine",
+      "repo": "https://github.com/Renzprjkt/kernel-xiaomi-vince",
+      "branch": "erofs",
       "device": "vince",
       "defconfig": "vince-perf_defconfig"
   },
@@ -37,8 +37,8 @@
     "AnyKernel3": {
       "use": true,
       "release": true,
-      "repo": "https://github.com/shenprjkt/AnyKernel3",
-      "branch": "master"
+      "repo": "https://github.com/Renzprjkt30/Anykernel3",
+      "branch": "main"
     }
   }
 ]
