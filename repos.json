@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "Bloss-Shine",
-      "repo": "https://github.com/Renzprjkt/kernel-xiaomi-vince",
-      "branch": "erofs",
-      "device": "vince",
-      "defconfig": "vince-perf_defconfig"
+      "repo": "https://github.com/Renzprjkt/kernel_4.19-msm8953",
+      "branch": "common",
+      "device": "ysl",
+      "defconfig": "vendor/msm8953-perf_defconfig"
   },
     "withKernelSU": false,
     "toolchains": [
