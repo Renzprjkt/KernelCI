@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "Bloss-Shine",
-      "repo": "https://github.com/Shiinaeru-Lab/kernel-xiaomi-ysl_4.19",
-      "branch": "common",
+      "repo": "https://github.com/Shiinaeru-Lab/android_kernel_4.19-msm8953",
+      "branch": "try-dtsi",
       "device": "ysl",
-      "defconfig": "vendor/ysl-perf_defconfig"
+      "defconfig": "vendor/msm8953-perf_defconfig"
   },
     "withKernelSU": false,
     "toolchains": [
