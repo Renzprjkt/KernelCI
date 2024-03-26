@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "Bloss-Shine-4.19",
       "repo": "https://github.com/Shiinaeru-Lab/android_kernel_4.19-msm8953",
-      "branch": "base",
+      "branch": "ysl-base",
       "device": "ysl",
       "defconfig": "vendor/msm8953-perf_defconfig"
   },
