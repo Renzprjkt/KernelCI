@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "Bloss-Shine-4.19",
+      "name": "Bloss-Shine-next",
       "repo": "https://github.com/Shiinaeru-Lab/android_kernel_4.19-msm8953",
       "branch": "ysl-base",
       "device": "ysl",
