@@ -310,17 +310,17 @@ jobs:
           cd AnyKernel3/
           zip -q -r "${{ env.anykernel }}.zip" *
 
+      - name: Upload Telegram
+        run: |
+          wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/main/upload.sh
+          bash upload.sh
+
       - name: "Upload AnyKernel3 image => (${{ env.builddate }})"
         uses: actions/upload-artifact@v4
         if: ${{ env.useAnykernel == 'true' }}
         with:
           name: "${{ env.KERNEL_DEVICE }}-${{ env.KERNEL_NAME }}_${{ env.builddate }}"
           path: AnyKernel3/*
-
-      - name: Upload Telegram
-        run: |
-          wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/main/upload.sh
-          bash upload.sh
 
       - name: Create GitHub Release => (${{ env.builddate }})
         continue-on-error: true

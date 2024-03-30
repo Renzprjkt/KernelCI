@@ -35,7 +35,7 @@ tgs() {
 # Push kernel to channel
 push() {
     cd AnyKernel3 || exit 1
-    ZIP -q -r "${{ env.anykernel }}.zip" *
+    ZIP=$(echo *.zip)
     tgs "${ZIP}" "Build took $((DIFF / 60)) minute(s) and $((DIFF % 60)) second(s). | For *${DEVICE} (${CODENAME})* | ${KBUILD_COMPILER_STRING}"
 }
 
