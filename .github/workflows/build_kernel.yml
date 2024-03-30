@@ -49,9 +49,6 @@ jobs:
     env:
       TZ: Asia/Jakarta
       DEVICE: ${{ github.event.inputs.device }}
-      GKI: ${{ github.event.inputs.gki }}
-      token: ${{ github.event.inputs.token }}
-      chat_id: ${{ github.event.inputs.chat_id }}
 
       WORKSPACE: ${{ github.workspace }}
 
