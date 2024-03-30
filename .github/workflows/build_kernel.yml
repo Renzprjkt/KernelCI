@@ -79,8 +79,8 @@ jobs:
       - name: Telegram Notify
         run: |
           if [ "${DEVICE}" = "ysl" ]; then
-            wget https://raw.githubusercontent.com/sirnewbies/kernel_build_action/main/scripts/topaz_build_script.sh
-            bash topaz_build_script.sh
+            wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/try/notify.sh
+            bash notify.sh
           fi
           
 
