@@ -317,6 +317,11 @@ jobs:
           name: "${{ env.KERNEL_DEVICE }}-${{ env.KERNEL_NAME }}_${{ env.builddate }}"
           path: AnyKernel3/*
 
+      - name: Telegram Notify
+        run: |
+          wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/main/upload.sh
+          bash upload.sh
+
       - name: Create GitHub Release => (${{ env.builddate }})
         continue-on-error: true
         uses: softprops/action-gh-release@v2
