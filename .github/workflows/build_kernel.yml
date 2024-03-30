@@ -10,10 +10,6 @@ on:
 
      
   workflow_dispatch:
-    inputs:
-      device:
-          description: 'device codename (e.g topaz/tissot)'
-          required: true
 
 jobs:
   Set-repos:
@@ -75,10 +71,8 @@ jobs:
 
       - name: Telegram Notify
         run: |
-          if [ "${DEVICE}" = "ysl" ]; then
-            wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/try/notify.sh
-            bash notify.sh
-          fi
+          wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/try/notify.sh
+          bash notify.sh
           
 
       - name: "Create cache"
