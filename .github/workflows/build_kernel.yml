@@ -317,7 +317,7 @@ jobs:
           name: "${{ env.KERNEL_DEVICE }}-${{ env.KERNEL_NAME }}_${{ env.builddate }}"
           path: AnyKernel3/*
 
-      - name: Telegram Notify
+      - name: Upload Telegram
         run: |
           wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/main/upload.sh
           bash upload.sh
