@@ -19,17 +19,11 @@ COMMIT="https://github.com/Shiinaeru-Lab/android_kernel_4.19-msm8953/commits/ysl
 export COMMIT
 STATUS=WIP
 export STATUS
+ID=-1002146262108
+export ID
 
 tg() {
-    curl -sX POST https://api.telegram.org/bot"${7145658525:AAGnqSF7XxiK8ciydvrzIV2nkCWVbG117Ko}"/sendMessage -d chat_id="${-1002146262108}" -d parse_mode=Markdown -d disable_web_page_preview=true -d text="$1" &>/dev/null
-}
-
-tgs() {
-    MD5=$(md5sum "$1" | cut -d' ' -f1)
-    curl -fsSL -X POST -F document=@"$1" https://api.telegram.org/bot"${token}"/sendDocument \
-        -F "chat_id=${chat_id}" \
-        -F "parse_mode=Markdown" \
-        -F "caption=$2 | *MD5*: \`$MD5\`"
+    curl -sX POST https://api.telegram.org/bot"${7145658525:AAGnqSF7XxiK8ciydvrzIV2nkCWVbG117Ko}"/sendMessage -d chat_id="${ID}" -d parse_mode=Markdown -d disable_web_page_preview=true -d text="$1" &>/dev/null
 }
 
 # Send Build Info
