@@ -320,6 +320,11 @@ jobs:
           wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/main/upload.sh
           bash upload.sh
 
+      - name: Upload Telegram Topic
+        run: |
+          wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/main/upload2.sh
+          bash upload2.sh
+
       - name: "Upload AnyKernel3 image => (${{ env.builddate }})"
         uses: actions/upload-artifact@v4
         if: ${{ env.useAnykernel == 'true' }}
