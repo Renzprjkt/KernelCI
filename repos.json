@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "perf-4.19",
-      "repo": "https://github.com/Shiinaeru-Lab/android_kernel_4.19-msm8953",
-      "branch": "ysl-base",
+      "repo": "https://github.com/RenzAlt/android_kernel_xiaomi_msm8953",
+      "branch": "13",
       "device": "ysl",
-      "defconfig": "vendor/msm8953-perf_defconfig"
+      "defconfig": "ysl_defconfig"
   },
     "withKernelSU": false,
     "toolchains": [
