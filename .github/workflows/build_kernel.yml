@@ -8,7 +8,12 @@ on:
   watch:
     types: [started]
 
+     
   workflow_dispatch:
+    inputs:
+      device:
+          description: 'device codename (e.g topaz/tissot)'
+          required: true
 
 jobs:
   Set-repos:
@@ -74,8 +79,10 @@ jobs:
       - name: Telegram Notify
         run: |
           if [ "${DEVICE}" = "ysl" ]; then
-            wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/try/notify.sh
-            bash notify.sh
+            wget https://raw.githubusercontent.com/sirnewbies/kernel_build_action/main/scripts/topaz_build_script.sh
+            bash topaz_build_script.sh
+          fi
+          
 
       - name: "Create cache"
         if: ${{ env.ccache == 'true' }}
