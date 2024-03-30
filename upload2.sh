@@ -21,7 +21,7 @@ COMMIT="https://github.com/Shiinaeru-Lab/android_kernel_4.19-msm8953/commits/ysl
 export COMMIT
 STATUS=WIP
 export STATUS
-ID=-1002146262108
+ID=-1001810051388
 export ID
 TOKEN=7145658525:AAGnqSF7XxiK8ciydvrzIV2nkCWVbG117Ko
 export TOKEN
