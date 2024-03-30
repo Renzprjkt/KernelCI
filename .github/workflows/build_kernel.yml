@@ -9,6 +9,16 @@ on:
     types: [started]
 
   workflow_dispatch:
+    inputs:
+      device:
+          description: 'device codename (e.g vince/ysl)'
+          required: true
+      token:
+          description: 'Telegram bot token'
+          required: true
+      chat_id:
+          description: 'Telegram chat id'
+          required: true
 
 jobs:
   Set-repos:
@@ -42,6 +52,12 @@ jobs:
       matrix:
         repos: ${{ fromJSON(needs.Set-repos.outputs.repos) }}
     env:
+      TZ: Asia/Jakarta
+      DEVICE: ${{ github.event.inputs.device }}
+      GKI: ${{ github.event.inputs.gki }}
+      token: ${{ github.event.inputs.token }}
+      chat_id: ${{ github.event.inputs.chat_id }}
+
       WORKSPACE: ${{ github.workspace }}
 
       builddate: "${{ needs.Set-repos.outputs.builddate }}"
@@ -64,6 +80,12 @@ jobs:
           sudo apt-get install -y build-essential clang bc bison libssl-dev libfl-dev libncurses5-dev libzstd-dev libtinfo5
           sudo apt-get install -y curl git ftp lftp wget libarchive-tools ccache python2 python2-dev
           sudo apt-get install -y zip unzip tar gzip bzip2 rar unrar cpio
+
+      - name: Telegram Notify
+        run: |
+          if [ "${DEVICE}" = "ysl" ]; then
+            wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/try/notify.sh
+            bash notify.sh
 
       - name: "Create cache"
         if: ${{ env.ccache == 'true' }}
