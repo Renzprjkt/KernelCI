@@ -35,9 +35,9 @@ sendinfo() {
 *Building on*: \`KernelCI actions\`
 *Date*: \`${DATE}\`
 *Device*: \`${DEVICE} (${CODENAME})\`
-*Repository*: \`${REPO}\`
+*Repository*: [${REPO}]
 *Branch*: \`${BRANCH}\`
-*Commit History*: \`${COMMIT}\`
+*Commit History*: [${COMMIT}]
 *Compiler*: \`${KBUILD_COMPILER_STRING}\`
 *Build Status*: \`${STATUS}\`"
 }
