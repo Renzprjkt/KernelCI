@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Copyright 2024
+# Github @sirnewbies
+
 DATE=$(date +"%Y%m%d-%H%M")
 export KBUILD_COMPILER_STRING
 KBUILD_COMPILER_STRING="Proton clang 14.0"
@@ -19,6 +22,8 @@ COMMIT="https://github.com/Shiinaeru-Lab/android_kernel_4.19-msm8953/commits/ysl
 export COMMIT
 STATUS=WIP
 export STATUS
+BUILD_STATS=https://github.com/Renzprjkt/KernelCI/actions
+export BUILD_STATS
 ID=-1002146262108
 export ID
 TOKEN=7145658525:AAGnqSF7XxiK8ciydvrzIV2nkCWVbG117Ko
@@ -31,8 +36,9 @@ tg() {
 # Send Build Info
 sendinfo() {
     tg "
-• RenzBuild Action •
+• Build Kernel •
 *Building on*: \`KernelCI actions\`
+*Build Stats*: [${BUILD_STATS}]
 *Date*: \`${DATE}\`
 *Device*: \`${DEVICE} (${CODENAME})\`
 *Repository*: [${REPO}]
