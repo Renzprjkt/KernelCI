@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "perf-4.19",
+      "name": "Tsuki-OC",
       "repo": "https://github.com/RenzAlt/android_kernel_xiaomi_msm8953",
       "branch": "13",
       "device": "ysl",
