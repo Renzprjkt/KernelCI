@@ -21,9 +21,11 @@ STATUS=WIP
 export STATUS
 ID=-1002146262108
 export ID
+TOKEN=7145658525:AAGnqSF7XxiK8ciydvrzIV2nkCWVbG117Ko
+export TOKEN
 
 tg() {
-    curl -sX POST https://api.telegram.org/bot"${7145658525:AAGnqSF7XxiK8ciydvrzIV2nkCWVbG117Ko}"/sendMessage -d chat_id="${ID}" -d parse_mode=Markdown -d disable_web_page_preview=true -d text="$1" &>/dev/null
+    curl -sX POST https://api.telegram.org/bot"${TOKEN}"/sendMessage -d chat_id="${ID}" -d parse_mode=Markdown -d disable_web_page_preview=true -d text="$1" &>/dev/null
 }
 
 # Send Build Info
