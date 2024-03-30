@@ -7,6 +7,8 @@ KBUILD_BUILD_HOST="Shiinaeru"
 export KBUILD_BUILD_HOST
 KBUILD_BUILD_USER="Ubuntu"
 export KBUILD_BUILD_USER
+BUILD_BY="Build with ❤️ by @Shiinaeru"
+export BUILD_BY
 DEVICE="Redmi S2"
 export DEVICE
 CODENAME="ysl"
@@ -35,7 +37,9 @@ tgs() {
 # Push kernel to channel
 push() {
     ZIP=$(echo *.zip)
-    tgs "${ZIP}" "Build took $((DIFF / 60)) minute(s) and $((DIFF % 60)) second(s). | For *${DEVICE} (${CODENAME})* | ${KBUILD_COMPILER_STRING}"
+    tgs "${ZIP}" "Build took $((DIFF / 60)) minute(s) and $((DIFF % 60)) second(s). | For *${DEVICE} (${CODENAME})* | ${KBUILD_COMPILER_STRING} | ${BUILD_BY}" 
 }
 
+END=$(date +"%s")
+DIFF=$((END - START))
 push
