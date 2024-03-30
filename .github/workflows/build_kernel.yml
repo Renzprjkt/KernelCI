@@ -8,18 +8,6 @@ on:
   watch:
     types: [started]
 
-  workflow_dispatch:
-    inputs:
-      device:
-          description: 'device codename (e.g vince/ysl)'
-          required: true
-      token:
-          description: 'Telegram bot token'
-          required: true
-      chat_id:
-          description: 'Telegram chat id'
-          required: true
-
 jobs:
   Set-repos:
     name: "Configuration CI"
