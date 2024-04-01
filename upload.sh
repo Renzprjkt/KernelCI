@@ -9,13 +9,13 @@ KBUILD_BUILD_USER="Ubuntu"
 export KBUILD_BUILD_USER
 BUILD_BY="Build with ❤️ by @Shiinaeru"
 export BUILD_BY
-DEVICE="Redmi S2"
+DEVICE="Redmi Note 11"
 export DEVICE
-CODENAME="ysl"
+CODENAME="Spes"
 export CODENAME
 REPO="https://github.com/Shiinaeru-Lab/android_kernel_4.19-msm8953"
 export REPO
-BRANCH="ysl-base"
+BRANCH="No-Melody"
 export BRANCH
 COMMIT="https://github.com/Shiinaeru-Lab/android_kernel_4.19-msm8953/commits/ysl-base/"
 export COMMIT
