@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "Bloss-Shine",
-      "repo": "https://github.com/Shiinaeru-Lab/android_kernel_4.19-msm8953",
-      "branch": "ysl-base",
-      "device": "ysl",
-      "defconfig": "vendor/msm8953-perf_defconfig"
+      "name": "No-Melody",
+      "repo": "https://github.com/Renzprjkt/android_kernel_xiaomi_spes",
+      "branch": "No-Melody",
+      "device": "spes",
+      "defconfig": "vendor/Bloss-Shine_defconfig"
   },
     "withKernelSU": false,
     "toolchains": [
@@ -37,7 +37,7 @@
     "AnyKernel3": {
       "use": true,
       "release": true,
-      "repo": "https://github.com/Renzprjkt30/Anykernel3",
+      "repo": "https://github.com/Renzprjkt/Anykernel3",
       "branch": "spes"
     }
   }
