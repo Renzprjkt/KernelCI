@@ -7,17 +7,17 @@ KBUILD_BUILD_HOST="Shiinaeru"
 export KBUILD_BUILD_HOST
 KBUILD_BUILD_USER="Ubuntu"
 export KBUILD_BUILD_USER
-DEVICE="Redmi S2"
+DEVICE="Redmi Note 11"
 export DEVICE
-CODENAME="ysl"
+CODENAME="spes/spesn"
 export CODENAME
-REPO="https://github.com/RenzAlt/android_kernel_xiaomi_msm8953"
+REPO="https://github.com/Renzprjkt/android_kernel_xiaomi_spes"
 export REPO
-BRANCH="13"
+BRANCH="No-Melody"
 export BRANCH
-COMMIT="https://github.com/RenzAlt/android_kernel_xiaomi_msm8953/commits/13/"
+COMMIT="https://github.com/Renzprjkt/android_kernel_xiaomi_spes/commits/No-Melody/"
 export COMMIT
-STATUS=WIP
+STATUS=Stable
 export STATUS
 BUILD_STATS=https://github.com/Renzprjkt/KernelCI/actions
 export BUILD_STATS
