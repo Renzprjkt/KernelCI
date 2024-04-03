@@ -71,12 +71,12 @@ jobs:
 
       - name: Telegram Notify
         run: |
-          wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/main/notify.sh
+          wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/ysl-4.9/notify.sh
           bash notify.sh
 
       - name: Telegram Topic Notify
         run: |
-          wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/main/topic.sh
+          wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/ysl-4.9/topic.sh
           bash topic.sh
           
 
@@ -278,12 +278,12 @@ jobs:
 
       - name: Upload Telegram
         run: |
-          wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/main/upload.sh
+          wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/ysl-4.9/upload.sh
           bash upload.sh
 
       - name: Upload Telegram Topic
         run: |
-          wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/main/upload2.sh
+          wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/ysl-4.9/upload2.sh
           bash upload2.sh
 
       - name: "Upload AnyKernel3 image => (${{ env.builddate }})"
