@@ -11,11 +11,11 @@ DEVICE="Redmi S2"
 export DEVICE
 CODENAME="ysl"
 export CODENAME
-REPO="https://github.com/RenzAlt/android_kernel_xiaomi_msm8953"
+REPO="https://github.com/RenzAlt/android_kernel_4.19-msm8953"
 export REPO
-BRANCH="13"
+BRANCH="ysl-base"
 export BRANCH
-COMMIT="https://github.com/RenzAlt/android_kernel_xiaomi_msm8953/commits/13/"
+COMMIT="https://github.com/RenzAlt/android_kernel_4.19-msm8953/commits/ysl-base/"
 export COMMIT
 STATUS=WIP
 export STATUS
