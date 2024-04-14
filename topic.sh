@@ -7,16 +7,18 @@ KBUILD_BUILD_HOST="Shiinaeru"
 export KBUILD_BUILD_HOST
 KBUILD_BUILD_USER="Ubuntu"
 export KBUILD_BUILD_USER
-DEVICE="Redmi S2"
+DEVICE="Redmi S2 & Redmi 5 Plus"
 export DEVICE
-CODENAME="ysl"
+CODENAME="paradise"
 export CODENAME
-REPO="https://github.com/RenzAlt/android_kernel_4.19-msm8953"
+REPO="https://github.com/RenzAlt/kernel-xiaomi-paradise"
 export REPO
-BRANCH="ysl-base"
+BRANCH="14"
 export BRANCH
-COMMIT="https://github.com/RenzAlt/android_kernel_4.19-msm8953/commits/ysl-base/"
+COMMIT="https://github.com/RenzAlt/kernel-xiaomi-paradise/commits/14/"
 export COMMIT
+ISSUES="https://github.com/RenzAlt/kernel-xiaomi-paradise/issues/1"
+export ISSUES
 STATUS=WIP
 export STATUS
 BUILD_STATS=https://github.com/Renzprjkt/KernelCI/actions
@@ -41,6 +43,7 @@ sendinfo() {
 *Repository*: [${REPO}]
 *Branch*: \`${BRANCH}\`
 *Commit History*: [${COMMIT}]
+*Issues*: [${ISSUES}]
 *Compiler*: \`${KBUILD_COMPILER_STRING}\`
 *Build Status*: \`${STATUS}\`"
 }
