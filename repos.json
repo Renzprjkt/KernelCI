@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "perf-4.19",
-      "repo": "https://github.com/RenzAlt/android_kernel_4.19-msm8953",
-      "branch": "ysl-base",
+      "name": "paradise-4.9",
+      "repo": "https://github.com/RenzAlt/kernel-xiaomi-paradise",
+      "branch": "14",
       "device": "ysl",
-      "defconfig": "vendor/msm8953-perf_defconfig"
+      "defconfig": "paradise-perf_defconfig"
   },
     "withKernelSU": false,
     "toolchains": [
