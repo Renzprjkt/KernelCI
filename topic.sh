@@ -23,9 +23,9 @@ STATUS=WIP
 export STATUS
 BUILD_STATS=https://github.com/Renzprjkt/KernelCI/actions
 export BUILD_STATS
-ID=-1001810051388
+ID=
 export ID
-TOKEN=7145658525:AAGnqSF7XxiK8ciydvrzIV2nkCWVbG117Ko
+TOKEN=
 export TOKEN
 
 tg() {
