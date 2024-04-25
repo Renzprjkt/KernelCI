@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "paradise-4.9",
-      "repo": "https://github.com/RenzAlt/kernel-xiaomi-paradise",
-      "branch": "14",
-      "device": "ysl",
-      "defconfig": "paradise-perf_defconfig"
+      "repo": "https://github.com/shenprjkt/mikasa_kernel_realme2_c1",
+      "branch": "Light",
+      "device": "C1",
+      "defconfig": "mikasa_defconfig"
   },
     "withKernelSU": false,
     "toolchains": [
