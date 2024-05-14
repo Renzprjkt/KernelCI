@@ -68,18 +68,7 @@ jobs:
           sudo apt-get install -y build-essential clang bc bison libssl-dev libfl-dev libncurses5-dev libzstd-dev libtinfo5
           sudo apt-get install -y curl git ftp lftp wget libarchive-tools ccache python2 python2-dev
           sudo apt-get install -y zip unzip tar gzip bzip2 rar unrar cpio
-
-      - name: Telegram Notify
-        run: |
-          wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/ysl-4.9/notify.sh
-          bash notify.sh
-
-      - name: Telegram Topic Notify
-        run: |
-          wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/ysl-4.9/topic.sh
-          bash topic.sh
           
-
       - name: "Create cache"
         if: ${{ env.ccache == 'true' }}
         id: ccache_key
@@ -280,11 +269,6 @@ jobs:
         run: |
           wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/ysl-4.9/upload.sh
           bash upload.sh
-
-      - name: Upload Telegram Topic
-        run: |
-          wget https://raw.githubusercontent.com/Renzprjkt/KernelCI/ysl-4.9/upload2.sh
-          bash upload2.sh
 
       - name: "Upload AnyKernel3 image => (${{ env.builddate }})"
         uses: actions/upload-artifact@v4
