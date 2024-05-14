@@ -5,9 +5,9 @@ export KBUILD_COMPILER_STRING
 KBUILD_COMPILER_STRING="Proton clang 14.0"
 BUILD_BY="Build with ❤️ by @Shiinaeru"
 export BUILD_BY
-DEVICE="Redmi Note 11"
+DEVICE="Redmi S2"
 export DEVICE
-CODENAME="Spes"
+CODENAME="YSL"
 export CODENAME
 ID=-1002014963063
 export ID
