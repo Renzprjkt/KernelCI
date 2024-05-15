@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "paradise-4.9",
+      "name": "reimu-4.9",
       "repo": "https://github.com/Renzprjkt/android_kernel_xiaomi_msm8953",
       "branch": "13",
       "device": "ysl",
