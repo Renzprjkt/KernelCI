@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "ysl-4.19",
+      "name": "ysl-test-dtsi",
       "repo": "https://github.com/Renzprjkt/msm-4.19",
       "branch": "caf-base",
       "device": "ysl",
