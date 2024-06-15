@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "ysl-soc-bringup",
-      "repo": "https://github.com/WeebProjectXd/msm-4.19",
-      "branch": "ysl/bringup",
+      "name": "ysl-new-dtsi",
+      "repo": "https://github.com/shenprjkt/android_kernel_xiaomi_ysl",
+      "branch": "adaptation-4.19",
       "device": "ysl",
-      "defconfig": "vendor/msm8953-perf_defconfig"
+      "defconfig": "ysl_defconfig"
   },
     "withKernelSU": false,
     "toolchains": [
