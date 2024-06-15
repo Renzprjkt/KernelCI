@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "ysl-new-dtsi",
       "repo": "https://github.com/shenprjkt/android_kernel_xiaomi_ysl",
-      "branch": "adaptation-4.19",
+      "branch": "13",
       "device": "ysl",
       "defconfig": "ysl_defconfig"
   },
